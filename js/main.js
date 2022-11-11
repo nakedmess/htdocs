@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 150) {
@@ -9,8 +9,8 @@
             $('.nav-bar').removeClass('nav-sticky');
         }
     });
-    
-    
+
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -27,8 +27,9 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
-    
+
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -41,8 +42,8 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-    
-    
+
+
     // Top News Slider
     $('.tn-slider').slick({
         autoplay: true,
@@ -51,8 +52,8 @@
         slidesToShow: 1,
         slidesToScroll: 1
     });
-    
-    
+
+
     // Category News Slider
     $('.cn-slider').slick({
         autoplay: false,
@@ -87,8 +88,8 @@
             }
         ]
     });
-    
-    
+
+
     // Related News Slider
     $('.sn-slider').slick({
         autoplay: false,
@@ -123,5 +124,17 @@
             }
         ]
     });
+//filtering on the main page
+var $btns = $('.btnn').click(function() {
+          if (this.id == 'all') {
+            $('#parent > div').fadeIn(450);
+            console.log('all');
+          } else {
+            var $el = $('.' + this.id).fadeIn(450);
+            $('#parent > div').not($el).hide();
+                console.log(this.id);
+          }
+          $btns.removeClass('active');
+          $(this).addClass('active');
+        });
 })(jQuery);
-

@@ -16,7 +16,7 @@
          <link href="css/style.css" rel="stylesheet">
      </head>
 
-     <body>
+     <body class="<?=$front;?>">
          <!-- Top Bar Start -->
          <div class="top-bar">
              <div class="container">
@@ -52,17 +52,15 @@
                      </button>
 
                      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                         <div class="navbar-nav mr-auto">
-                             <a href="index.html" class="nav-item nav-link active">Home</a>
-                             <div class="nav-item dropdown">
-                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                 <div class="dropdown-menu">
-                                     <a href="#" class="dropdown-item">Sub Item 1</a>
-                                     <a href="#" class="dropdown-item">Sub Item 2</a>
-                                 </div>
-                             </div>
-                             <a href="single-page.html" class="nav-item nav-link">Single Page</a>
-                             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                         <div class="navbar-nav mr-auto filter-news" >
+                             <span class="nav-item nav-link active btnn" id="all">All</span>
+                             <?php
+                     $row = $DB->query("SELECT * FROM category");
+                     while($x = $row->fetch_assoc()){
+
+                       ?>
+                             <span class="nav-item nav-link btnn" id="cat<?=$x['id']?>"><?=$x['name']?></span>
+                           <?php } ?>
                          </div>
                          <div class="social ml-auto">
                              <a href=""><i class="fab fa-twitter"></i></a>
@@ -191,5 +189,7 @@
 
          <!-- Template Javascript -->
          <script src="js/main.js"></script>
+         <script>     
+             </script>
      </body>
  </html>

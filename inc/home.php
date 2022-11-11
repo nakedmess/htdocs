@@ -63,7 +63,7 @@
              </div>
          </div>
          <!-- Top News End-->
-*/ ?>
+
          <!-- Category News Start-->
          <div class="cat-news">
              <div class="container">
@@ -112,7 +112,7 @@
              </div>
          </div>
          <!-- Category News End-->
-<?php /*
+
          <!-- Category News Start-->
          <div class="cat-news">
              <div class="container">
@@ -377,85 +377,29 @@
              </div>
          </div>
          <!-- Tab News Start-->
-
+*/ ?>
          <!-- Main News Start-->
          <div class="main-news">
              <div class="container">
                  <div class="row">
                      <div class="col-lg-9">
-                         <div class="row">
-                             <div class="col-md-4">
+                         <div class="row"  id="parent">
+                           <?php
+                   $row = $DB->query("SELECT * FROM news");
+                   while($x = $row->fetch_assoc()){
+                     $news_id = $x['id'];
+			        	$im = $DB->query("SELECT * FROM news_images WHERE news_id = '$news_id' LIMIT 1");
+			        	$i = $im->fetch_assoc();
+                     ?>
+                             <div class="col-md-4 cat<?=$x['category_id']?>">
                                  <div class="mn-img">
-                                     <img src="img/news-350x223-1.jpg" />
+                                     <img src="<?=$i['img_url'];?>" />
                                      <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
+                                         <a href="?news-single&id=<?=$x['id']?>"><?=$x['title']?></a>
                                      </div>
                                  </div>
                              </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-2.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-3.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-4.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-5.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-1.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-2.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-3.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="mn-img">
-                                     <img src="img/news-350x223-4.jpg" />
-                                     <div class="mn-title">
-                                         <a href="">Lorem ipsum dolor sit</a>
-                                     </div>
-                                 </div>
-                             </div>
+                             <?php } ?>
                          </div>
                      </div>
 
@@ -463,16 +407,12 @@
                          <div class="mn-list">
                              <h2>Read More</h2>
                              <ul>
-                                 <li><a href="">Lorem ipsum dolor sit amet</a></li>
-                                 <li><a href="">Pellentesque tincidunt enim libero</a></li>
-                                 <li><a href="">Morbi id finibus diam vel pretium enim</a></li>
-                                 <li><a href="">Duis semper sapien in eros euismod sodales</a></li>
-                                 <li><a href="">Vestibulum cursus lorem nibh</a></li>
-                                 <li><a href="">Morbi ullamcorper vulputate metus non eleifend</a></li>
-                                 <li><a href="">Etiam vitae elit felis sit amet</a></li>
-                                 <li><a href="">Nullam congue massa vitae quam</a></li>
-                                 <li><a href="">Proin sed ante rutrum</a></li>
-                                 <li><a href="">Curabitur vel lectus</a></li>
+                               <?php
+                       $row = $DB->query("SELECT * FROM news ORDER BY rand() LIMIT 5");
+                       while($x = $row->fetch_assoc()){
+                         ?>
+                                 <li><a href="?news-single&id=<?=$x['id']?>"><?=$x['title']?></a></li>
+<?php } ?>
                              </ul>
                          </div>
                      </div>
@@ -480,4 +420,3 @@
              </div>
          </div>
          <!-- Main News End-->
-*/ ?>
