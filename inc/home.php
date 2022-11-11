@@ -385,7 +385,7 @@
                      <div class="col-lg-9">
                          <div class="row"  id="parent">
                            <?php
-                   $row = $DB->query("SELECT * FROM news");
+                   $row = $DB->query("SELECT * FROM news ORDER BY date DESC");
                    while($x = $row->fetch_assoc()){
                      $news_id = $x['id'];
 			        	$im = $DB->query("SELECT * FROM news_images WHERE news_id = '$news_id' LIMIT 1");

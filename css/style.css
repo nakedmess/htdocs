@@ -13,9 +13,7 @@ a {
     transition: 0.5s;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover, a:active, a:focus {
     color: #000000;
     outline: none;
     text-decoration: none;
@@ -27,21 +25,14 @@ p {
     color: #000000;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px 0;
     padding: 0;
     color: #000000;
     font-weight: 600;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
     font-weight: 400;
 }
 
@@ -71,12 +62,10 @@ h6 {
     color: #ffffff;
 }
 
-
 /**********************************/
 /********* Form Input CSS *********/
 /**********************************/
-.form-control,
-.custom-select {
+.form-control, .custom-select {
     width: 100%;
     height: 35px;
     padding: 5px 15px;
@@ -85,24 +74,20 @@ h6 {
     margin-bottom: 15px
 }
 
-.form-control:focus,
-.custom-select:focus {
+.form-control:focus, .custom-select:focus {
     box-shadow: none;
     border-color: #FF6F61;
 }
 
-.custom-radio,
-.custom-checkbox {
+.custom-radio, .custom-checkbox {
     margin-bottom: 15px;
 }
 
-.custom-radio .custom-control-label::before,
-.custom-checkbox .custom-control-label::before {
+.custom-radio .custom-control-label::before, .custom-checkbox .custom-control-label::before {
     border-color: #cccccc;
 }
 
-.custom-radio .custom-control-input:checked~.custom-control-label::before,
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+.custom-radio .custom-control-input:checked~.custom-control-label::before, .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     color: #ffffff;
     background: #FF6F61;
 }
@@ -118,7 +103,6 @@ button.btn:hover {
     background: #FF6F61;
     border-color: #FF6F61;
 }
-
 
 /**********************************/
 /*********** Top Bar CSS **********/
@@ -175,12 +159,10 @@ button.btn:hover {
 }
 
 @media (max-width: 768px) {
-    .top-bar .tb-contact,
-    .top-bar .tb-menu {
+    .top-bar .tb-contact, .top-bar .tb-menu {
         text-align: center;
     }
 }
-
 
 /**********************************/
 /*********** Brand CSS ************/
@@ -244,18 +226,17 @@ button.btn:hover {
 }
 
 @media (min-width: 768px) {
-    .navbar{
+    .navbar {
         min-height:44px;
     }
+
     .brand {
         max-height: 90px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .brand .b-logo,
-    .brand .b-ads,
-    .brand .b-search {
+    .brand .b-logo, .brand .b-ads, .brand .b-search {
         text-align: center;
         margin-bottom: 15px;
     }
@@ -264,7 +245,6 @@ button.btn:hover {
         margin-bottom: 0;
     }
 }
-
 
 /**********************************/
 /*********** Nav Bar CSS **********/
@@ -286,16 +266,12 @@ button.btn:hover {
     padding: 0;
 }
 
-.navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
     color: #ffffff;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
     border-bottom: 2px solid #000000;
     transition: none;
 }
@@ -308,8 +284,7 @@ button.btn:hover {
 }
 
 @media (min-width: 768px) {
-    .nav-bar,
-    .nav-bar .navbar {
+    .nav-bar, .nav-bar .navbar {
         background: #FF6F61 !important;
     }
 
@@ -325,8 +300,7 @@ button.btn:hover {
 }
 
 @media (max-width: 768px) {
-    .nav-bar,
-    .nav-bar .navbar {
+    .nav-bar, .nav-bar .navbar {
         padding: 3px 0;
         background: #FF6F61 !important;
     }
@@ -374,7 +348,6 @@ button.btn:hover {
 .nav-bar .social a:hover i {
     color: #FF6F61;
 }
-
 
 /**********************************/
 /********** Top News CSS **********/
@@ -442,8 +415,7 @@ button.btn:hover {
     padding: 0;
 }
 
-.top-news .slick-prev,
-.top-news .slick-next {
+.top-news .slick-prev, .top-news .slick-next {
     width: 28px;
     height: 28px;
     z-index: 1;
@@ -461,16 +433,12 @@ button.btn:hover {
     right: 30px;
 }
 
-.top-news .slick-prev:hover,
-.top-news .slick-prev:focus,
-.top-news .slick-next:hover,
-.top-news .slick-next:focus {
+.top-news .slick-prev:hover, .top-news .slick-prev:focus, .top-news .slick-next:hover, .top-news .slick-next:focus {
     color: #ffffff;
     background: #FF6F61;
 }
 
-.top-news .slick-prev::before,
-.top-news .slick-next::before {
+.top-news .slick-prev::before, .top-news .slick-next::before {
     font-family: "Font Awesome 5 Free";
     font-size: 18px;
     font-weight: 900;
@@ -484,7 +452,6 @@ button.btn:hover {
 .top-news .slick-next::before {
     content: "\f105";
 }
-
 
 /**********************************/
 /******* Category News CSS ********/
@@ -545,8 +512,7 @@ button.btn:hover {
     color: #FF6F61;
 }
 
-.cat-news .slick-prev,
-.cat-news .slick-next {
+.cat-news .slick-prev, .cat-news .slick-next {
     top: -62px;
     width: 28px;
     height: 28px;
@@ -565,16 +531,12 @@ button.btn:hover {
     right: 14px;
 }
 
-.cat-news .slick-prev:hover,
-.cat-news .slick-prev:focus,
-.cat-news .slick-next:hover,
-.cat-news .slick-next:focus {
+.cat-news .slick-prev:hover, .cat-news .slick-prev:focus, .cat-news .slick-next:hover, .cat-news .slick-next:focus {
     color: #ffffff;
     background: #FF6F61;
 }
 
-.cat-news .slick-prev::before,
-.cat-news .slick-next::before {
+.cat-news .slick-prev::before, .cat-news .slick-next::before {
     font-family: "Font Awesome 5 Free";
     font-size: 18px;
     font-weight: 900;
@@ -588,7 +550,6 @@ button.btn:hover {
 .cat-news .slick-next::before {
     content: "\f105";
 }
-
 
 /**********************************/
 /********** Tab News CSS **********/
@@ -607,8 +568,7 @@ button.btn:hover {
     border-radius: 0;
 }
 
-.tab-news .nav.nav-pills .nav-link:hover,
-.tab-news .nav.nav-pills .nav-link.active {
+.tab-news .nav.nav-pills .nav-link:hover, .tab-news .nav.nav-pills .nav-link.active {
     color: #ffffff;
     background: #FF6F61;
 }
@@ -647,8 +607,6 @@ button.btn:hover {
 .tab-news .tn-title a:hover {
     color: #FF6F61;
 }
-
-
 
 /**********************************/
 /********** Main News CSS *********/
@@ -746,7 +704,6 @@ button.btn:hover {
     color: #FF6F61;
 }
 
-
 /**********************************/
 /********* Breadcrumb CSS *********/
 /**********************************/
@@ -769,7 +726,6 @@ button.btn:hover {
 .breadcrumb-wrap .breadcrumb .breadcrumb-item.active {
     color: #353535;
 }
-
 
 /**********************************/
 /********* Single News CSS ********/
@@ -802,11 +758,11 @@ button.btn:hover {
     color: #000000;
 }
 
-.single-news .sn-related {
+.single-news .sn-comments {
     margin-bottom: 45px;
 }
 
-.single-news .sn-related h2 {
+.single-news .sn-comments h2 {
     color: #000000;
     margin-bottom: 30px;
     padding-bottom: 15px;
@@ -852,8 +808,7 @@ button.btn:hover {
     color: #FF6F61;
 }
 
-.single-news .sn-slider .slick-prev,
-.single-news .sn-slider .slick-next {
+.single-news .sn-slider .slick-prev, .single-news .sn-slider .slick-next {
     top: -62px;
     width: 28px;
     height: 28px;
@@ -872,16 +827,12 @@ button.btn:hover {
     right: 14px;
 }
 
-.single-news .sn-slider .slick-prev:hover,
-.single-news .sn-slider .slick-prev:focus,
-.single-news .sn-slider .slick-next:hover,
-.single-news .sn-slider .slick-next:focus {
+.single-news .sn-slider .slick-prev:hover, .single-news .sn-slider .slick-prev:focus, .single-news .sn-slider .slick-next:hover, .single-news .sn-slider .slick-next:focus {
     color: #ffffff;
     background: #FF6F61;
 }
 
-.single-news .sn-slider .slick-prev::before,
-.single-news .sn-slider .slick-next::before {
+.single-news .sn-slider .slick-prev::before, .single-news .sn-slider .slick-next::before {
     font-family: "Font Awesome 5 Free";
     font-size: 18px;
     font-weight: 900;
@@ -895,7 +846,6 @@ button.btn:hover {
 .single-news .sn-slider .slick-next::before {
     content: "\f105";
 }
-
 
 /**********************************/
 /*********** Sidebar CSS **********/
@@ -963,8 +913,7 @@ button.btn:hover {
     border-radius: 0;
 }
 
-.sidebar .tab-news .nav.nav-pills .nav-link:hover,
-.sidebar .tab-news .nav.nav-pills .nav-link.active {
+.sidebar .tab-news .nav.nav-pills .nav-link:hover, .sidebar .tab-news .nav.nav-pills .nav-link.active {
     color: #ffffff;
     background: #FF6F61;
 }
@@ -1086,7 +1035,6 @@ button.btn:hover {
     -webkit-filter: blur(3px);
 }
 
-
 /**********************************/
 /********** Contact CSS ***********/
 /**********************************/
@@ -1095,8 +1043,7 @@ button.btn:hover {
     padding: 25px 0 15px 0;
 }
 
-.contact .contact-form,
-.contact .contact-info {
+.contact .contact-form, .contact .contact-info {
     margin-bottom: 45px;
 }
 
@@ -1140,7 +1087,6 @@ button.btn:hover {
 .contact .social a:hover i {
     color: #ffffff;
 }
-
 
 /**********************************/
 /********** Footer CSS ************/
@@ -1280,11 +1226,9 @@ button.btn:hover {
     background: #FF6F61;
 }
 
-.footer .newsletter input:focus,
-.footer .newsletter .btn:focus {
+.footer .newsletter input:focus, .footer .newsletter .btn:focus {
     box-shadow: none;
 }
-
 
 /**********************************/
 /******** Footer Menu CSS *********/
@@ -1322,7 +1266,6 @@ button.btn:hover {
     border-right: none;
 }
 
-
 /**********************************/
 /******** Footer Bottom CSS *******/
 /**********************************/
@@ -1340,64 +1283,115 @@ button.btn:hover {
     text-align: right;
 }
 
-.footer-bottom .copyright p,
-.footer-bottom .template-by p {
+.footer-bottom .copyright p, .footer-bottom .template-by p {
     color: #ffffff;
     font-weight: 400;
     margin: 0;
 }
 
-.footer-bottom .copyright p a,
-.footer-bottom .template-by p a {
+.footer-bottom .copyright p a, .footer-bottom .template-by p a {
     font-weight: 600;
 }
 
-.footer-bottom .copyright p a:hover,
-.footer-bottom .template-by p a:hover {
+.footer-bottom .copyright p a:hover, .footer-bottom .template-by p a:hover {
     color: #ffffff;
 }
 
 @media (max-width: 768.98px) {
-    .footer-bottom .copyright,
-    .footer-bottom .template-by {
+    .footer-bottom .copyright, .footer-bottom .template-by {
         text-align: center;
     }
 }
-.not-front .filter-news{
-  display:none;
+
+.not-front .filter-news {
+    display: none;
 }
 
-.main-news{
-    margin-top:30px;
+.main-news {
+    margin-top: 30px;
 }
+
 .thumbnail {
-    padding:0px;
+    padding: 0px;
 }
+
 .panel {
-	position:relative;
+    position: relative;
 }
-.panel>.panel-heading:after,.panel>.panel-heading:before{
-	position:absolute;
-	top:11px;left:-16px;
-	right:100%;
-	width:0;
-	height:0;
-	display:block;
-	content:" ";
-	border-color:transparent;
-	border-style:solid solid outset;
-	pointer-events:none;
+
+.panel>.panel-heading:after,.panel>.panel-heading:before {
+    position: absolute;
+    top: 11px;
+    left: -16px;
+    right: 100%;
+    width: 0;
+    height: 0;
+    display: block;
+    content: " ";
+    border-color: transparent;
+    border-style: solid solid outset;
+    pointer-events: none;
 }
-.panel>.panel-heading:after{
-	border-width:7px;
-	border-right-color:#f7f7f7;
-	margin-top:1px;
-	margin-left:2px;
+
+.panel>.panel-heading:after {
+    border-width: 7px;
+    border-right-color: #f7f7f7;
+    margin-top: 1px;
+    margin-left: 2px;
 }
-.panel>.panel-heading:before{
-	border-right-color:#ddd;
-	border-width:8px;
+
+.panel>.panel-heading:before {
+    border-right-color: #ddd;
+    border-width: 8px;
 }
-.user-photo{
-    width:15%;
+
+.user-photo {
+    width: 15%;
+}
+
+.form-group.fl_icon .icon {
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    background: #f6f6f7;
+    color: #b5b8c2;
+    text-align: center;
+    line-height: 50px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.form-group .form-input {
+    font-size: 13px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #b4b7c1;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #edeff2;
+    border-radius: 3px;
+}
+
+.form-group.fl_icon .form-input {
+    padding-left: 70px;
+}
+
+.form-group textarea.form-input {
+    height: 150px;
+}
+.sn-comments .btn{
+  background: #FF6F61;
+  border:none;
+}
+
+.sn-comments h4{
+  margin-top: 15px;
 }
