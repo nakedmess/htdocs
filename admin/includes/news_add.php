@@ -80,6 +80,7 @@ if ($uploadOk == 0) {
                  </select>
 <script type="text/javascript">
          CKEDITOR.replace( 'description' );
+
       </script>
 	</div>
 

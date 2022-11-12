@@ -30,7 +30,8 @@ if (isset($_GET["id"])) {
           <div class="sn-content">
             <p class="posted_on"> Posted on  <?= $x["date"] ?> </p>
             <h1 class="sn-title"> <?= $x["title"] ?> </h1>
-             <?= $x["description"] ?>
+            <!--allows CKEditor to output contents in the correct format !-->
+             <div><?php echo htmlspecialchars_decode($x["description"]); ?></div>
           </div>
         </div> <?php
 }
