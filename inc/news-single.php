@@ -25,8 +25,7 @@ if (isset($_GET["id"])) {
       <div class="col-lg-8">
         <div class="sn-container">
           <div class="sn-img">
-            <img src="
-							<?= $x["photo"] ?>" />
+            <img src="admin/<?= $x["photo"] ?>"/>
           </div>
           <div class="sn-content">
             <p class="posted_on"> Posted on  <?= $x["date"] ?> </p>
@@ -115,7 +114,7 @@ if (isset($_GET["id"])) {
                               $i2 = $im2->fetch_assoc();?>
               <div class="nl-item">
                 <div class="nl-img">
-                  <img src="<?= $xx["photo"] ?>" />
+                  <img src="admin/<?= $xx["photo"] ?>" />
                 </div>
                 <div class="nl-title">
                   <a href="?news-single&id=<?= $xx["id"] ?>"> <?= $xx["title"] ?></a>

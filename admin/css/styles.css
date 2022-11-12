@@ -176,3 +176,12 @@ a:hover {
 label{
 	color:white;
 }
+.navbar-brand{
+	color:white;
+}
+.save{
+	margin-top:15px;
+}
+.edit_img{
+	max-width:200px;
+}

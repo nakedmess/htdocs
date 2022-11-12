@@ -1,4 +1,3 @@
-
 <?php include('includes/inc.php'); ?>
 <?php include('../inc/config.php'); ?>
 
@@ -9,18 +8,17 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 </head>
 <body>
 <?php
 if(isset($_COOKIE['user'])){
 ?>
-
 <div id="main_nav">
-	<div class="menu_header">Admin panel</div> <span class="log_out">Log out</span>
+	<div class="menu_header">Admin panel</div> <a href="" class="log_out">Log out</a>
 		<a href="?admin_users"><li>Admin users</li></a>
 		<a href="?news"><li>News</li></a>
 		<a href="?category"><li>Categories</li></a>
