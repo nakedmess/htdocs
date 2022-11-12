@@ -1,10 +1,9 @@
 <?php
-
 $DB = new mysqli('localhost','root','','ict_1');
-$base_url = 'http://idworkshop.eu/';
+$randomletter = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz1234567890"), 0, 8);
 if(isset($_GET['news'])){
   $page 	=	 'inc/news.php';
-  $title	=	 'Ziņas';
+  $title	=	 'News';
   $front	=	 'not-front';
 }elseif(isset($_GET['news-single'])){
   $page 	=	 'inc/news-single.php';
