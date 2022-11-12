@@ -31,7 +31,9 @@ if (isset($_GET["id"])) {
 							<?= $i["img_url"] ?>" />
           </div>
           <div class="sn-content">
-            <h1 class="sn-title"> <?= $x["title"] ?> </h1> <?= $x["description"] ?>
+            <p class="posted_on"> Posted on  <?= $x["date"] ?> </p>
+            <h1 class="sn-title"> <?= $x["title"] ?> </h1>
+             <?= $x["description"] ?>
           </div>
         </div> <?php
 }
@@ -71,7 +73,7 @@ if (isset($_GET["id"])) {
                 <input class="form-input" type="text" name="name" placeholder="Your name">
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 fl_icon">
+<!--            <div class="col-xs-12 col-sm-6 fl_icon">
               <div class="form-group fl_icon">
                 <div class="icon">
                   <i class="fas fa-envelope"></i>
@@ -79,6 +81,7 @@ if (isset($_GET["id"])) {
                 <input class="form-input" type="text" placeholder="Your email">
               </div>
             </div>
+!-->
             <div class="col-xs-12 col-sm-12">
               <div class="form-group">
                 <textarea name="description" class="form-input" required="" placeholder="Your text"></textarea>

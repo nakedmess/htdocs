@@ -1395,3 +1395,7 @@ button.btn:hover {
 .sn-comments h4{
   margin-top: 15px;
 }
+.posted_on{
+  color: grey;
+  font-style: italic;
+}
