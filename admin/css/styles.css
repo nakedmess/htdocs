@@ -1,0 +1,172 @@
+body {
+	background: url('/admin/theme/img/bg.png');
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.login_content {
+	margin-top: 15%;
+	height: 200px;
+}
+
+.login_content input[type='submit']{
+	text-shadow: 1px 1px 1px #555;
+}
+
+.cms {
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+}
+
+#main_nav{
+	float: left;
+	width: 20%;
+	background: #111;
+	color: #ddd;
+	list-style: none;
+	min-height: 100vh;
+}
+
+#main_nav a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+#main_nav a li{
+	padding: 8px;
+	padding-left: 35px;
+	margin-bottom: 4px;
+}
+
+#main_nav a li:hover {
+	background: #222;
+	cursor: pointer;
+	text-shadow: 2px 0px 2px #000;
+}
+
+#main_nav .menu_header {
+	background: #333;
+	margin-top: 0;
+	color: #666;
+	text-shadow: 2px 0px 2px #000;
+	padding: 20px;
+	border-bottom: 1px solid #555;
+	text-transform: uppercase;
+	font-size: 19px;
+}
+
+#content {
+	float: left;
+	width: 74%;
+	margin-left: 3%;
+	background: #2d2d2d;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+#content h2 {
+	background: #333;
+	margin-top: 0;
+	color: #666;
+	text-shadow: 2px 0px 2px #000;
+	padding: 20px;
+	border-bottom: 1px solid #555;
+	text-transform: uppercase;
+}
+
+#content h3 {
+	color: #666;
+	text-shadow: 2px 0px 0px #000;
+	padding-left: 30px;
+	width: 100%;
+}
+
+
+.form {
+	margin: 5px;
+	border: 1px solid #444;
+	padding: 5px;
+	height: 400px;
+}
+
+.table {
+	background: #e8e8e8;
+}
+
+.ok {
+	margin: 10px;
+	padding: 15px;
+	background: #dff0d8;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.err {
+	margin: 10px;
+	padding: 15px;
+	background: #f2dede;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.topx {
+	color: #fff!important;
+	text-align: center;
+}
+
+.imc {
+	background: #eee;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.imc button {
+	float: right;
+	margin-top: 25px;
+}
+
+.colors {
+	padding: 5px;
+	margin: 5px;
+	color: #fff;
+}
+
+.delete {
+	top: 9px;
+	right: 20px;
+	position: absolute;
+}
+
+.nav-tabs {
+	color: #fff!important;
+	background: #2d2d2d!important;
+}
+
+.nav-tabs a:hover {
+	background: #555!important;
+	border-color: #555!important;
+}
+
+.nav-tabs .active a{
+	color: #222!important;
+}
+
+.nav-tabs .active a:hover{
+	background: #fff!important;
+	border-color: #fff!important;
+}
+
+.nav-tabs a {
+	color: #fff!important;
+}
+
+.panel-default {
+	border-color: #2d2d2d!important;
+}
+
+.info {
+	padding: 10px;
+	overflow: hidden;
+}
