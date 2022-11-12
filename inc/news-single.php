@@ -3,10 +3,8 @@ if (isset($_GET["id"])) {
 
     $id = smart($_GET["id"]);
     $row = $DB->query("SELECT * FROM news WHERE id = '$id'");
-    $im = $DB->query("SELECT * FROM news_images WHERE news_id = '$id'");
     $x = $row->fetch_assoc();
     $cat_id = $x["category_id"];
-    $i = $im->fetch_assoc();
     ?>
 <!-- Breadcrumb Start -->
 <div class="breadcrumb-wrap">
@@ -28,7 +26,7 @@ if (isset($_GET["id"])) {
         <div class="sn-container">
           <div class="sn-img">
             <img src="
-							<?= $i["img_url"] ?>" />
+							<?= $x["photo"] ?>" />
           </div>
           <div class="sn-content">
             <p class="posted_on"> Posted on  <?= $x["date"] ?> </p>
@@ -117,7 +115,7 @@ if (isset($_GET["id"])) {
                               $i2 = $im2->fetch_assoc();?>
               <div class="nl-item">
                 <div class="nl-img">
-                  <img src="<?= $i2["img_url"] ?>" />
+                  <img src="<?= $xx["photo"] ?>" />
                 </div>
                 <div class="nl-title">
                   <a href="?news-single&id=<?= $xx["id"] ?>"> <?= $xx["title"] ?></a>
