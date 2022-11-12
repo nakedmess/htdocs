@@ -1,3 +1,6 @@
+body {
+		background: #111;
+}
 a:hover {
 	text-decoration: none;
 }
@@ -19,10 +22,8 @@ a:hover {
 #main_nav{
 	float: left;
 	width: 20%;
-	background: #111;
 	color: #ddd;
 	list-style: none;
-	min-height: 100vh;
 }
 
 #main_nav a {
@@ -165,4 +166,7 @@ a:hover {
 .info {
 	padding: 10px;
 	overflow: hidden;
+}
+.fa, .fas {
+    color: black;
 }

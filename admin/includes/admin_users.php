@@ -11,7 +11,7 @@
   		$pass = smart($_POST['pass']);
   		$pass2 = smart($_POST['passr']);
   		$hash = smart($randomletter);
-  
+
   		if($pass == $pass2){
   			if($user != "" && $email != "" && $pass != "" && $name != ""){
   				$pass = md5(md5($pass));
@@ -36,6 +36,14 @@
   		}
 
   	}
+
+    if(isset($_GET['delete_user_id'])){
+  $id=$_GET['delete_user_id'];
+  if($_GET['delete_user_id'] != 1){
+  $DB->query("DELETE FROM admin_users WHERE id='$id'");
+  echo "<div class='err success'>Admin deleted!</div>";
+}
+}
     ?>
 	<form method="POST">
 	<div class=" col-md-6">
@@ -67,8 +75,8 @@
 <td><?=$x['user'];?></td>
 <td><?=$x['name'];?></td>
 <td><?=$x['email'];?></td>
-<td><center><a onclick="set_edit('<?=$x['user'];?>','<?=$x['name'];?>','<?=$x['email'];?>')"><span class="glyphicon glyphicon-pencil"></span></a></center></td>
-<td><center><a class="confirm" href="?admin_users&delete_user_id=<?=$x['id'];?>"><span class="glyphicon glyphicon-remove" style="color: red;"></span></a></center></td>
+<td><center><a onclick="set_edit('<?=$x['user'];?>','<?=$x['name'];?>','<?=$x['email'];?>')"><i class="fa fa-pencil-alt" aria-hidden="true"></i></a></center></td>
+<td><center><a class="confirm" href="?admin_users&delete_user_id=<?=$x['id'];?>"><i class="fa fa-window-close"></i></a></center></td>
 </tr>
 
 
@@ -77,3 +85,10 @@
 
 	</table>
 </div>
+<script>
+function set_edit(user, name, email){
+  $('#username').val(user);
+  $('#name').val(name);
+  $('#email').val(email);
+}
+</script>
