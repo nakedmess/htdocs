@@ -170,3 +170,9 @@ a:hover {
 .fa, .fas {
     color: black;
 }
+.comm textarea{
+	width:100%;
+}
+label{
+	color:white;
+}
