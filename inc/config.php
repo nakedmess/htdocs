@@ -1,6 +1,7 @@
 <?php
 $DB = new mysqli('localhost','root','','ict_1');
 $randomletter = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz1234567890"), 0, 8);
+date_default_timezone_set('Europe/Riga');
 if(isset($_GET['news'])){
   $page 	=	 'inc/news.php';
   $title	=	 'News';
@@ -90,4 +91,6 @@ function timeAgo($time_ago)
     }
 }
 
+error_reporting(0);
+ini_set('display_errors', 0);
 ?>

@@ -68,7 +68,7 @@ if (isset($_GET["id"])) {
                 <div class="icon">
                   <i class="fa fa-user"></i>
                 </div>
-                <input class="form-input" type="text" name="name" placeholder="Your name">
+                <input class="form-input" type="text" name="name" required="" placeholder="Your name">
               </div>
             </div>
 <!--            <div class="col-xs-12 col-sm-6 fl_icon">
@@ -88,7 +88,7 @@ if (isset($_GET["id"])) {
             </div>
           </div>
           <?php
-          if($_SERVER["REQUEST_METHOD"] == "POST")
+          if(isset($_POST['description']) && isset($_POST['name']))
           {
             $description = smart($_POST['description']);
             $name = smart($_POST['name']);
