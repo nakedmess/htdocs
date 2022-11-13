@@ -10,4 +10,4 @@ A list of technologies used within the project:
 * [Jquery](https://api.jquery.com/category/version/3.4/): Version 3.4.1
 ***
 ## Author
-Kristaps Kukurans
+Kristaps Kukurans (Never used git or github before, please be nice :()
