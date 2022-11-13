@@ -10,8 +10,7 @@
                      $news_id = $x['id'];
                      ?>
                              <div class="col-md-4 cat<?=$x['category_id']?>">
-                                 <div class="mn-img">
-                                     <img src="admin/<?=$x['photo'];?>" />
+                                 <div class="mn-img" style="background-image: url('./admin/<?=$x['photo'];?>');">
                                      <div class="mn-title">
                                          <a href="?news-single&id=<?=$x['id']?>"><?=$x['title']?></a>
                                      </div>
