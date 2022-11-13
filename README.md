@@ -3,6 +3,8 @@
 ***
 * Download project's .zip file and extract the files where you'd host the site
 * Add database 'ict_1.sql' (located in root)
+## Admin
+* login&pass - admin
 ## Technologies
 ***
 A list of technologies used within the project:
